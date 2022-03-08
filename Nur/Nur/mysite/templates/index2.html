@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Futbol</title>
+	<script type="text/javascript" src="/media//media/scripts/jquery-3.6.0.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/media/style2.css">
+	<script type="text/javascript" src="/media//media/scriptjs.js"></script>
+</head>
+<body>
+<div class="width100">
+<div class="shapka">
+	<p>Чемпионат Европы по футболу 2020</p>
+</div>
+
+<div class="header">
+	<ul>
+		<li><a href=""> МАТЧИ</a></li>
+		<li><a href=""> НОВОСТИ</a></li>
+		<li><a href="" class="active"> ТАБЛИЦА</a></li>
+		<li><a href=""> СТАТИСТИКА</a></li>
+		<li><a href=""> ИГРОКИ</a></li>
+	</ul>
+</div>
+</div>
+
+<div class="main">
+	<div class="main-header">
+		<h1>ЕВРО-2020</h1>
+	</div>
+	{% for g in group %}
+
+	<div class="main-hed-con">
+		<p>Группа {{ g.name }}</p>
+
+		<div class="main-content111">
+			<div class="main-clubs">
+				<h6>Клуб</h6>
+				</div>
+				<div class="main-statics">
+				<ul class="points-stat">
+						<li>И</li>
+						<li>В</li>
+						<li>Н</li>
+						<li>П</li>
+						<li>О</li>
+						<li>ЗМ</li>
+						<li>ПМ</li>
+						<li>РМ</li>
+						<li>Последние 5</li>
+					</ul>
+				</div>
+		</div>
+
+		{% for gr in team %}
+		{% if g.id == gr.group.id %}
+		<div class="main-content">
+			<div class="main-clubs blue">
+				<p><img src="/{{ gr.flag }}"> {{ gr.name }}</p>
+			</div>
+			<div class="main-statics">
+				<ul class="points-stat">
+						<li>{{ gr.game }} </li>
+						<li>{{ gr.win }} </li>
+						<li>{{ gr.draw }} </li>
+						<li>{{ gr.lose }} </li>
+						<li>{{ gr.goals_scored }} </li>
+						<li>{{ gr.goals_conceded }} </li>
+						<li>{{ gr.goals_difference }} </li>
+						<li>{{ gr.score }} </li>
+						<li><img src="/media/images/WhatsApp Image 2021-06-15 at 14.56.13.jpeg"></li>
+						<li><img src="/media/images/WhatsApp Image 2021-06-15 at 14.56.13.jpeg"></li>
+						<li><img src="/media/images/WhatsApp Image 2021-06-15 at 14.56.13.jpeg"></li>
+						<li><img src="/media/images/WhatsApp Image 2021-06-15 at 14.56.13.jpeg"></li>
+						<li><img src="/media/images/WhatsApp Image 2021-06-15 at 14.56.13.jpeg"></li>
+					</ul>
+			</div>
+		</div>
+	{% endif %}
+	{% endfor %}
+		</div>
+	{% endfor %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="footer">
+		<div class="fot1">
+			<p>Квалификация</p>
+			<img src="/media/images/square256_25198.png">
+			Следующий раунд
+			<br>
+			<img src="/media/images/Без названия.png">
+			Возможен следующий раунд
+		</div>
+		<div class="fot2">
+			<p>Последние 5 матчей</p>
+			<img src="/media/images/WhatsApp Image 2021-06-15 at 14.56.16.jpeg">
+			Победа
+			<br>
+			<img src="/media/images/WhatsApp Image 2021-06-15 at 14.56.17.jpeg">
+			Ничья
+			<br>
+			<img src="/media/images/WhatsApp Image 2021-06-15 at 14.56.14.jpeg">
+			Поражение
+			<br>
+			<img src="/media/images/WhatsApp Image 2021-06-15 at 14.56.13.jpeg">
+			Пропуск
+		</div>
+	</div>
+</div>
+
+	
+
+
+
+</div>
+
+
+
+
+
+</body>
+</html>

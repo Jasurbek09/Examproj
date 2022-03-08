@@ -1,0 +1,173 @@
+body, p, div, h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: sans-serif;
+}
+.width100{
+	width: 100%;
+	background-color: #093e84;
+
+
+}
+.shapka{
+	width: 600px;
+	height: 50px;
+	background-color: #093e84;
+	margin: 0 auto;
+	text-align: center;
+}
+.shapka p{
+	padding-top: 25px;
+	padding-left: 10px;
+	font-size: 20px;
+	color: white;
+}
+.header{
+	width: 600px;
+	margin: 0 auto;
+	background-color: #093e84;
+	padding-top: 5px;
+	text-align: center;
+}
+.header ul li{
+		list-style: none;
+		display: inline-block;
+		vertical-align: top;
+		margin-right: 20px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		font-size: 16px;
+
+}
+.header a{
+	text-decoration: none;
+	color: white;
+
+}
+.header a:hover{
+	background-color: #2f2cbb;
+}
+.main{
+	margin: 0 auto;
+	width: 600px;
+	background-color: #fffffb87;
+	
+
+
+}
+.main-hed-con{
+	border: 1px solid #d4c3c3;
+	border-radius: 5px;
+}
+.main-hed-con > p{
+	font-weight: bold;
+	padding-left: 10px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	    padding: 10px;
+
+}
+.main > p{
+
+
+}
+
+.main-header{
+	margin-bottom: 15px;
+	background-color: #efeeebd4;
+	border-bottom: 1px solid #d4c3c3;
+	margin-top: -15px;
+	text-align: center;
+	
+}
+.main-header select{
+	border: none;
+	background-color: #efeeebd4;
+	margin-bottom: 10px;
+	color: blue;
+	font-weight: bold;
+}
+.main-header h1{
+	padding: 5px;
+	font-size: 15px;
+    color: grey;
+    font-weight: 100;
+}
+.main-clubs img{
+	margin-left: 10px;
+	width: 25px;
+	height: 18px;
+}
+.main-clubs{
+	display: inline-block;
+	vertical-align: top;
+	width: 34%;
+	padding-bottom: 15px;
+}
+.main-clubs h6{
+	margin-left: 10px;
+	margin-top: 20px;
+	font-size: 14px;
+	font-weight: 100;
+	color: grey;
+}
+.main-clubs p{
+	margin-top: 15px;
+	margin-left: 5px;
+
+}
+.main-statics{
+	display: inline-block;
+	vertical-align: top;
+	width: 64%;
+}
+.main-statics li{
+	display: inline-block;
+	vertical-align: top;
+}
+.main-content{
+	border-top: 1px solid #d4c3c3;
+}
+.points-stat li{
+	margin-right: 8px;
+}
+.active{
+	border-bottom: 5px solid;
+    padding-bottom: 8px;
+}
+
+.footer{
+	background-color: #efeeebd4;
+	width: 550px;
+	margin: 0 auto;
+	border: 1px solid #d4c3c3;
+	border-radius: 5px;
+	margin-top: 15px;
+}
+.fot1{
+	width: 48%;
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+.fot1 img{
+	width: 10px;
+	height: 10px;
+}
+.fot2{
+	width: 49%;
+	display: inline-block;
+	vertical-align: top;
+    padding-bottom: 50px;
+    padding-top: 10px;
+
+}
+.blue{
+	border-left: 2px solid blue;
+}
+.orange{
+	border-left: 2px solid orange;
+}
